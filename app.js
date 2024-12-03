@@ -30,7 +30,7 @@ app.get('*', function(req, res) {
     res.sendFile(`${__dirname}/client/dist/client/browser/index.html`);
 });
 
-const port = process.env.port || 80;
+const port = process.env.port || 8080;
 app.listen(port, () => {
     console.log(`Express server listening on port ${port}`);
 });
